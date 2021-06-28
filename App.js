@@ -6,34 +6,48 @@
  */
 
 import React from 'react';
-import type {Node} from 'react';
-import {SafeAreaView, Text, StyleSheet} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
 
-const App: () => Node = () => {
+import SplashScreen from './src/Screens/SplashScreen';
+import RegistrationScreen from './src/Screens/RegistrationScreen';
+import LoginScreen from './src/Screens/RegistrationScreen';
+import HomeScreen from './src/Screens/HomeScreen';
+
+const StackForScreens = createStackNavigator();
+
+const Authentication = () => {
   return (
-    <SafeAreaView>
-      <Text>Merhaba Dunya</Text>
-    </SafeAreaView>
+    <StackForScreens.Navigator initialRouteName="LoginScreen">
+      <StackForScreens.Screen
+        name="LoginScreen"
+        component={LoginScreen}
+        options={{headerShown: false}}
+      />
+      <StackForScreens.Screen
+        name="RegistrationScreen"
+        component={RegistrationScreen}
+        options={{
+          title: 'Registration',
+          headerStyle: {
+            backgroundColor: '#307ecc',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}
+      />
+    </StackForScreens.Navigator>
   );
 };
 
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
+const App = () => {
+  return (
+    <NavigationContainer>
+     
+    </NavigationContainer>
+  );
+};
 
 export default App;
