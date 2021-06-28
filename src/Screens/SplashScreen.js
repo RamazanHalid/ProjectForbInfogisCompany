@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import {ActivityIndicator, View, Image} from 'react-native';
 
 import styles from '../styles/styles';
+
+
 const SplashScreen = ({navigation}) => {
   const [animating, setAnimating] = useState(true);
 
@@ -16,7 +18,7 @@ const SplashScreen = ({navigation}) => {
     <View style={styles.container}>
       <Image
         source={require('../assets/Images/bInfoGISLOGO.png')}
-        style={{width: '90%', resizeMode: 'contain', margin: 30}}
+        style={{width: '85%', resizeMode: 'contain', margin: 32}}
       />
       <ActivityIndicator
         animating={animating}
