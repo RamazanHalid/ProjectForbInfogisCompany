@@ -30,11 +30,12 @@ const Authentication = () => {
         options={{
           title: 'Registration',
           headerStyle: {
-            backgroundColor: '#307ecc',
+            backgroundColor: '#476ecc',
           },
-          headerTintColor: '#fff',
+          headerTintColor: '#c5e6a6',
           headerTitleStyle: {
             fontWeight: 'bold',
+            fontSize: '12',
           },
         }}
       />
@@ -45,7 +46,19 @@ const Authentication = () => {
 const App = () => {
   return (
     <NavigationContainer>
-     
+      <StackForScreens.Navigator initialRouteName="SplashScreen">
+        <StackForScreens.Screen
+          name="SplashScreen"
+          component={SplashScreen}
+          options={{headerShown: false}}
+        />
+
+        <StackForScreens.Screen
+          name="Authentication"
+          component={Authentication}
+          options={{headerShown: false}}
+        />
+      </StackForScreens.Navigator>
     </NavigationContainer>
   );
 };
