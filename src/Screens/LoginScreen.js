@@ -53,8 +53,9 @@ const LoginScreen = ({navigation}) => {
 
         if (responseJson.success == 1) {
           console.log(responseJson);
-          //here I will write homescreen
-          alert('Login Successfuly');
+          navigation.navigate('HomeScreen');
+
+          //alert('Login Successfuly');
         } else {
           setErrortext(responseJson.message);
         }

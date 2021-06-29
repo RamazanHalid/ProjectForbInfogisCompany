@@ -11,7 +11,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import SplashScreen from './src/Screens/SplashScreen';
 import RegistrationScreen from './src/Screens/RegistrationScreen';
-import LoginScreen from './src/Screens/RegistrationScreen';
+import LoginScreen from './src/Screens/LoginScreen';
 import HomeScreen from './src/Screens/HomeScreen';
 
 const StackForScreens = createStackNavigator();
@@ -28,6 +28,7 @@ const Authentication = () => {
         name="RegistrationScreen"
         component={RegistrationScreen}
         options={{
+          headerShown: false,
           title: 'Registration',
           headerStyle: {
             backgroundColor: '#476ecc',
@@ -56,6 +57,11 @@ const App = () => {
         <StackForScreens.Screen
           name="Authentication"
           component={Authentication}
+          options={{headerShown: false}}
+        />
+        <StackForScreens.Screen
+          name="HomeScreen"
+          component={HomeScreen}
           options={{headerShown: false}}
         />
       </StackForScreens.Navigator>

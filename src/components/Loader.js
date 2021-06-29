@@ -12,7 +12,7 @@ const Loader = props => {
             animating={true}
             color="#red"
             size="large"
-            style={styles.activityIndicator2}
+            style={styles.activityIndicator}
           />
         </View>
       </View>
