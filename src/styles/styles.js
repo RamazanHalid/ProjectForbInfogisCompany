@@ -1,6 +1,7 @@
 import {StyleSheet, ActivityIndicator} from 'react-native';
 
 const styles = StyleSheet.create({
+  //SplashScreen
   container: {
     flex: 1,
     alignItems: 'center',
@@ -11,6 +12,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     height: 80,
   },
+  //LoginScreen
   mainBody: {
     flex: 1,
     justifyContent: 'center',
@@ -80,6 +82,22 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-around',
+  },
+  loginScreenKeyboardAvoidingViewView: {
+    alignItems: 'center',
+  },
+  loginScreenKeyboardAvoidingViewViewImage: {
+    width: '70%',
+    height: 100,
+    resizeMode: 'contain',
+    marginBottom: 30,
+  },
+  //Registration Screen
+  successTextStyle: {
+    color: 'white',
+    textAlign: 'center',
+    fontSize: 18,
+    padding: 30,
   },
 });
 
