@@ -6,5 +6,6 @@ For Authitication I used a restful API (written with C# and .NET). You can look 
 Here is some Screen Shots from the mobile application.
 
 SplashScreen: Running for 4.5 seconds.
+
  ![SplashScreen](https://user-images.githubusercontent.com/42031794/123752414-6df51c80-d8c1-11eb-9a80-5df4095cfd02.png)
  
