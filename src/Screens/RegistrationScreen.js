@@ -43,7 +43,7 @@ const RegistrationScreen = props => {
       return;
     }
     if (validator.isEmpty(PasswordConfirmation)) {
-      setErrortext('Password conmfirmation is required!')
+      setErrortext('Password conmfirmation is required!');
       return;
     }
 
