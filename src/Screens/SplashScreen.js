@@ -3,7 +3,6 @@ import {ActivityIndicator, View, Image} from 'react-native';
 
 import styles from '../styles/styles';
 
-
 const SplashScreen = ({navigation}) => {
   const [animating, setAnimating] = useState(true);
 
