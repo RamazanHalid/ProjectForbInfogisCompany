@@ -94,10 +94,26 @@ const styles = StyleSheet.create({
   },
   //Registration Screen
   successTextStyle: {
-    color: 'white',
+    color: 'green',
     textAlign: 'center',
     fontSize: 18,
     padding: 30,
+  },
+  registrationScreenlogoImageStyle: {
+    width: '70%',
+    height: 100,
+    resizeMode: 'contain',
+    margin: 30,
+  },
+  registrationSuccessfuly: {
+    flex: 1,
+    backgroundColor: '#FAEBD7',
+    justifyContent: 'center',
+  },
+  registrationSuccessfulyImage: {
+    height: 150,
+    resizeMode: 'contain',
+    alignSelf: 'center',
   },
 });
 
