@@ -28,6 +28,7 @@ RegistrationScreen: Here users can create their own account. Validation rules ap
 
 
 HomeScreen: After logining successfuly we see this screen:
+
 ![HomeScreen](https://user-images.githubusercontent.com/42031794/123756942-1efdb600-d8c6-11eb-8c97-cd65ffa9d3d8.png)
 
  
