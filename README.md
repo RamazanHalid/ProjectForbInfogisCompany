@@ -23,6 +23,7 @@ All events that happen during user operations are done in the back-end. For exam
 
 RegistrationScreen: Here users can create their own account. Validation rules applied here too. If registration success, open successful registration screen if not we see an error message.
 
-![RegistrationSuccess](https://user-images.githubusercontent.com/42031794/123756722-e2ca5580-d8c5-11eb-90ad-2899a5ff17ad.png)
 ![RegistrationScreen](https://user-images.githubusercontent.com/42031794/123756698-dc3bde00-d8c5-11eb-939c-ff0ffda5a959.png)
+![RegistrationSuccess](https://user-images.githubusercontent.com/42031794/123756722-e2ca5580-d8c5-11eb-90ad-2899a5ff17ad.png)
+
  
