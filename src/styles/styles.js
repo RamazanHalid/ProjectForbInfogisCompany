@@ -115,6 +115,30 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
     alignSelf: 'center',
   },
+  //home screen
+  homeScreenSafetyarea: {
+    flex: 1,
+  },
+  homeScreenSafetyareaView: {
+    flex: 1,
+    padding: 16,
+  },
+  homeScreenSafetyareaViewText: {
+    fontSize: 18,
+    textAlign: 'center',
+    color: 'grey',
+    marginBottom: 50,
+  },
+  homeScreenSafetyareaViewView: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  homeScreenSafetyareaViewViewText: {
+    fontSize: 50,
+    textAlign: 'center',
+    marginBottom: 16,
+  },
 });
 
 export default styles;
