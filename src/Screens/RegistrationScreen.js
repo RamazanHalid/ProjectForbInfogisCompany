@@ -25,7 +25,6 @@ const RegistrationScreen = props => {
 
   const handleSubmitButton = () => {
     setErrortext('');
-
     if (validator.isEmpty(FirstName)) {
       setErrortext('First name is required!');
       return;
